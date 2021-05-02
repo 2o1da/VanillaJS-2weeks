@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <meta charset="UTF-8" />
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="DaSol Kim" />
+        <title>SOLDA</title>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="static/css/styles.css" />
     </head>
 
     <body>
-        <h1>HELLO</h1>
-        <script src="index.js"></script>
+        <section class="center">
+            <div class="js-clock clock">
+                <h1 class="clock__text">00:00</h1>
+            </div>
+
+            <div class="js-name name"></div>
+
+            <div>
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="오늘 할 일은?" />
+                </form>
+
+                <ul class="js-toDoList"></ul>
+            </div>
+            <h4 class="js-greetings greetings"></h4>
+        </section>
+
+        <div class="js-location location">
+            <span class="location__text"></span>
+        </div>
+        <div class="js-weather weather">
+            <span class="js-weather"></span>
+        </div>
+
+        <script src="static/js/clock.js"></script>
+        <script src="static/js/weather.js"></script>
+        <script src="static/js/user.js"></script>
+        <script src="static/js/toDo.js"></script>
     </body>
 </html>
